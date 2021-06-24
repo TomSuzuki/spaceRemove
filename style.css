@@ -1,0 +1,62 @@
+#input,
+#output {
+    font-size    : large;
+    padding      : .5em;
+    width        : 100%;
+    box-sizing   : border-box;
+    margin       : .25em 0 1em;
+    height       : 16em;
+    border-radius: .5em;
+}
+
+#output {
+    background-color: #DDD;
+}
+
+#footer {
+    padding         : 1em 0;
+    margin          : 0;
+    background-color: #DDD;
+    width           : 100%;
+    text-align      : center;
+    height          : 1em;
+    bottom          : 0;
+}
+
+#update {
+    text-align: right;
+}
+
+#frame {
+    padding      : 0 2em;
+    box-sizing   : border-box;
+    margin-top   : 1em;
+    margin-bottom: 2em;
+}
+
+#footer_frame {
+    position   : relative;
+    display    : flex;
+    align-items: flex-end;
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    margin          : 0;
+    background-color: #EEE;
+    min-height      : 100vh;
+    display         : grid;
+    grid-column     : 1fr auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 0;
+    padding-left : .5em;
+}

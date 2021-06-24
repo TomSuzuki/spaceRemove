@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>スペース消すやつ。</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./main.js"></script>
+</head>
+
+<body>
+
+    <div id="frame">
+        <h1>スペースを消すやつ</h1>
+        <p id="update">2021/06/24 更新</p>
+        <h3>入力</h3>
+        <textarea id="input" oninput="remove_space('input', 'output');"></textarea>
+        <p class="center">▼<br>▼<br>▼</p>
+        <h3>結果</h3>
+        <textarea id="output" readonly="readonly"></textarea>
+
+        <hr>
+
+        <h2>説明</h2>
+        <p>pdfなどの文章からスペースや改行を削除してコピペしやすいようにするためのツールです。以下の文字を文字列から削除します。
+        <ul>
+            <li>半角スペース</li>
+            <li>/n、/rなどの改行コード</li>
+        </ul>
+        </p>
+        <p>使い方は、入力部分のテキストエリアに文字列を貼り付けるだけ。自動的に、結果部分のテキストエリアに処理後のテキストが出力されます。</p>
+    </div>
+
+    <div id="footer_frame">
+        <p id="footer">&copy2021 TomSuzuki | <a href="https://github.com/TomSuzuki/spaceRemove">GitHub</a></p>
+    </div>
+</body>
+
+</html>
