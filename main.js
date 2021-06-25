@@ -2,12 +2,12 @@
 function remove_space(id_input, id_output) {
     let text = document.getElementById(id_input).value;
 
-    text = replaceAll(text, ["\n", "\r", " "], "");
+    text = replace_all(text, ["\n", "\r", " "], "");
 
     document.getElementById(id_output).innerText = text;
 }
 
-function replaceAll(text, targets, replacement) {
+function replace_all(text, targets, replacement) {
     for (let i in targets) {
         let temp = "";
         while (true) {
